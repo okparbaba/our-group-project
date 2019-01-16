@@ -1,0 +1,152 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    tools:context="com.techniquesmm.employeeinformationproject.ChangePwd">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="89dp"
+            android:gravity="center"
+            android:text="Change Password"
+            android:textColor="@color/button"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/tv_current"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignLeft="@+id/tv_change"
+            android:layout_alignStart="@+id/tv_change"
+            android:layout_below="@+id/title"
+            android:layout_marginTop="57dp"
+            android:text="Current \npassword "
+            style="@style/text"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="17dp"/>
+
+
+        <EditText
+            android:id="@+id/current"
+            android:layout_width="150dp"
+            android:layout_height="42dp"
+            android:layout_alignBottom="@+id/tv_current"
+            android:layout_alignLeft="@+id/change"
+            android:layout_alignStart="@+id/change"
+            android:background="@drawable/for_edittextback"
+            android:ems="10"
+            android:hint="old password"
+            android:inputType="textPassword"
+            android:padding="10dp"/>
+
+
+        <TextView
+            android:id="@+id/tv_change"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tv_current"
+            android:layout_marginLeft="12dp"
+            style="@style/text"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="15dp"
+            android:text="Change\npassword"
+            android:textSize="17dp"
+            />
+
+
+        <EditText
+            android:id="@+id/change"
+            android:layout_width="150dp"
+            android:layout_height="42dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/tv_change"
+            android:layout_marginEnd="13dp"
+            android:layout_marginRight="13dp"
+            android:background="@drawable/for_edittextback"
+            android:ems="10"
+            android:hint="new password"
+            android:inputType="text"
+            android:padding="10dip" />
+
+        <TextView
+            android:id="@+id/rewrite"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignLeft="@+id/tv_change"
+            android:layout_alignStart="@+id/tv_change"
+            android:layout_below="@+id/change"
+            android:layout_marginTop="15dp"
+            style="@style/text"
+            android:text="Confirm \npassword"
+            android:textSize="17dp"
+            />
+
+
+        <EditText
+            android:id="@+id/retype"
+            android:layout_width="150dp"
+            android:layout_height="42dp"
+            android:layout_alignLeft="@+id/change"
+            android:layout_alignStart="@+id/change"
+            android:layout_alignTop="@+id/rewrite"
+            android:background="@drawable/for_edittextback"
+            android:ems="10"
+            android:hint="retype new "
+            android:inputType="text"
+            android:padding="10dip" />
+
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="100dp"
+            android:layout_height="39dp"
+            android:layout_alignTop="@+id/ok"
+            android:layout_marginLeft="22dp"
+            android:layout_marginStart="22dp"
+            android:layout_toEndOf="@+id/ok"
+            android:layout_toRightOf="@+id/ok"
+            android:padding="10dp"
+            style="@style/forbutton"
+            android:text="Cancel" />
+
+        <Button
+            android:id="@+id/ok"
+            android:layout_width="100dp"
+            android:layout_height="39dp"
+            android:layout_alignLeft="@+id/rewrite"
+            android:layout_alignStart="@+id/rewrite"
+            android:layout_below="@+id/retype"
+            android:layout_marginLeft="71dp"
+            android:layout_marginStart="71dp"
+            android:layout_marginTop="29dp"
+            android:padding="10dp"
+            style="@style/forbutton"
+            android:text="OK" />
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/rewrite"
+            android:layout_alignStart="@+id/rewrite"
+            android:layout_below="@+id/cancel"
+            android:layout_marginTop="38dp"
+            style="@style/text"
+            android:text="see password" />
+
+    </RelativeLayout>
+</LinearLayout>

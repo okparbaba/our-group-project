@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:text="You can find all the employees' imformations with this application.If you
+have any problem, you can report us on facebook." />
+
+    <TextView
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:text="Developed by Team 3"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:textColor="#000"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:text="Members" />
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="160dp">
+        <TextView
+            style="@style/forourname"
+            android:text="@string/acho"/>
+        <TextView
+            style="@style/forourname"
+            android:text="@string/nandar"/>
+        <TextView
+            style="@style/forourname"
+            android:text="@string/mi"/>
+        <TextView
+            style="@style/forourname"
+            android:text="@string/su"/>
+        <TextView
+            style="@style/forourname"
+            android:text="@string/yan"/>
+        <TextView
+            style="@style/forourname"
+            android:text="@string/kaung"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
+

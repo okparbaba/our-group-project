@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_display_sqlite_data"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context="com.techniquesmm.employeeinformationproject.DisplaySQLiteDataActivity">
+
+    <EditText
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_height="35dp"
+        android:paddingLeft="8dp"
+        android:hint="Search.."
+        android:background="@drawable/forsom_edittext"
+        android:iconifiedByDefault="false">
+        <requestFocus/>
+    </EditText>
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_below="@+id/search"
+        android:layout_marginTop="45dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" >
+    </ListView>
+
+</RelativeLayout>
+

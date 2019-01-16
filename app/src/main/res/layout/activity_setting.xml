@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    android:gravity="center"
+    tools:context="com.techniquesmm.employeeinformationproject.Setting">
+
+
+
+    <LinearLayout
+        android:id="@+id/li_setting"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2">
+        <Button
+            android:id="@+id/bt_changepwd"
+            android:text="Change Password"
+            android:textSize="10dp"
+            style="@style/setting_textview"/>
+        <Button
+            android:id="@+id/bt_logout"
+            android:text="Log Out"
+            android:textSize="10dp"
+            style="@style/setting_textview"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_marginTop="50dp"
+        android:id="@+id/bt_deleteacc"
+        android:text="Delete Account"
+        android:textSize="17dp"
+        android:layout_below="@+id/li_setting"
+        style="@style/deletebutton" />
+
+
+
+</RelativeLayout>
+
+

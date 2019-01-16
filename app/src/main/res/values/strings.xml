@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">EmployeeInformation</string>
+    <string name="acho">Aye Cho Cho Pyone</string>
+    <string name="nandar">Nandar Kyaw Win</string>
+    <string name="mi">Hlaing Wai Wai Htet</string>
+    <string name="su">Than Su Su Htay</string>
+    <string name="yan">Yan Naing Linn</string>
+    <string name="kaung">Kaung Sat Kyaw</string>
+    <string name="edit">Edit</string>
+    <string name="about">About Us</string>
+</resources>

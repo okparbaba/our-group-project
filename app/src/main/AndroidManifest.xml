@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.techniquesmm.employeeinformationproject">
+
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/applogo"
+        android:label="Employee Information"
+        android:roundIcon="@drawable/applogo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".HomeActivity">
+        </activity>
+
+        <activity android:name=".SignUp"
+            android:label="Sign Up">
+        </activity>
+
+        <activity android:name=".DisplaySQLiteDataActivity"
+            android:label="Employee List">
+        </activity>
+
+        <activity
+            android:name=".ShowSingleRecordActivity"
+            android:label="Detail"
+            android:parentActivityName=".DisplaySQLiteDataActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".DisplaySQLiteDataActivity"/>
+        </activity>
+
+        <activity
+            android:name=".InsertActivity"
+            android:label="Add"
+            android:parentActivityName=".DisplaySQLiteDataActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".DisplaySQLiteDataActivity"/>
+        </activity>
+
+        <activity
+            android:name=".Setting"
+            android:label="Setting"
+            android:parentActivityName=".DisplaySQLiteDataActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".DisplaySQLiteDataActivity"/>
+        </activity>
+
+        <activity
+            android:name=".ChangePwd"
+            android:label="Change Password"
+            android:parentActivityName=".Setting">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Setting"/>
+        </activity>
+
+        <activity
+            android:name=".EditSingleRecordActivity"
+            android:label="@string/edit"
+            android:parentActivityName=".DisplaySQLiteDataActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".DisplaySQLiteDataActivity"/>
+        </activity>
+
+        <activity
+            android:name=".About"
+            android:label="@string/about"
+            android:parentActivityName=".DisplaySQLiteDataActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".DisplaySQLiteDataActivity"/>
+        </activity>
+
+        <activity
+            android:name=".SMS"
+            android:label="SMS"
+            android:parentActivityName=".ShowSingleRecordActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ShowSingleRecordActivity"/>
+        </activity>
+
+    </application>
+
+</manifest>

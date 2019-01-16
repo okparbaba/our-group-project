@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_show_single_record"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context="com.techniquesmm.employeeinformationproject.ShowSingleRecordActivity">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+    <TextView
+        android:text="ID                       = "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/tv_id"
+        android:textColor="#000000"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:text="Name               = "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_id"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/tv_name"
+        android:textColor="#000000"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:text="Father Name  = "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_name"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/tv_fname"
+        android:textColor="#000000"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:text="Date of Birth   = "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_fname"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/tv_dob"
+        android:textColor="#000000"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:text="Age                   = "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_dob"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/tv_age"
+        android:textColor="#000000"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:text="Email                = "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_age"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/tv_email"
+        android:textColor="#000000"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:text="Phone No        = "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_email"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/tv_phone"
+        android:textColor="#000000"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:text="Salary               = "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_phone"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/tv_salary"
+        android:textColor="#000000"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:text="Department    = "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_salary"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/tv_depart"
+        android:textColor="#000000"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:text="Qualification  = "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_depart"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/tv_quli"
+        android:textColor="#000000"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:text ="Position           ="
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_quli"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/tv_option"
+        android:textColor="#000000"
+        android:textSize="20dp"/>
+
+
+    <TextView
+        android:text="Address          = "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_option"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/tv_addr"
+        android:textColor="#000000"
+        android:textSize="20dp"/>
+
+
+    <TextView
+        android:text="ID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewID"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/tv_id"
+        android:layout_toEndOf="@+id/tv_id" />
+
+    <TextView
+        android:text="Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewName"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/textViewID"
+        android:layout_toRightOf="@+id/tv_name"
+        android:layout_toEndOf="@+id/tv_name"/>
+
+    <TextView
+        android:text="Fathername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewFName"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/textViewName"
+        android:layout_toRightOf="@+id/tv_fname"
+        android:layout_toEndOf="@+id/tv_fname"/>
+
+    <TextView
+        android:text="dob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewDob"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/textViewFName"
+        android:layout_toRightOf="@+id/tv_dob"
+        android:layout_toEndOf="@+id/tv_dob"/>
+
+    <TextView
+        android:text="age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewAge"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/textViewDob"
+        android:layout_toRightOf="@+id/tv_age"
+        android:layout_toEndOf="@+id/tv_age"/>
+
+    <TextView
+        android:text="email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewEmergency"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/textViewAge"
+        android:layout_toRightOf="@+id/tv_email"
+        android:layout_toEndOf="@+id/tv_email"/>
+
+
+
+    <TextView
+        android:text="phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewPhone"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:autoLink="phone"
+        android:linksClickable="true"
+        android:layout_below="@+id/textViewEmergency"
+        android:layout_toRightOf="@+id/tv_phone"
+        android:layout_toEndOf="@+id/tv_phone"/>
+
+    <TextView
+        android:text="salary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewSalary"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/textViewPhone"
+        android:layout_toRightOf="@+id/tv_salary"
+        android:layout_toEndOf="@+id/tv_salary"/>
+
+    <TextView
+        android:text="department"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewDepart"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/textViewSalary"
+        android:layout_toRightOf="@+id/tv_depart"
+        android:layout_toEndOf="@+id/tv_depart"/>
+
+    <TextView
+        android:text="quli"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewQuli"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/textViewDepart"
+        android:layout_toRightOf="@+id/tv_quli"
+        android:layout_toEndOf="@+id/tv_quli"/>
+
+    <TextView
+        android:text="option"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewCountry"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/textViewQuli"
+        android:layout_toRightOf="@+id/tv_option"
+        android:layout_toEndOf="@+id/tv_option"/>
+
+    <TextView
+        android:text="address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewAddr"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/textViewCountry"
+        android:layout_toRightOf="@+id/tv_addr"
+        android:layout_toEndOf="@+id/tv_addr"/>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
+

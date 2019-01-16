@@ -1,0 +1,52 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="setting_textview">
+        <item name="android:textColor">#F0FFF0</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:padding">1dp</item>
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_height">90dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/fortvstyle</item>
+        <item name="android:textAlignment" tools:targetApi="jelly_bean_mr1">center</item>
+
+    </style>
+    <style name="deletebutton">
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:background">@drawable/forbutton</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="forourname">
+        <item name="android:textAlignment" tools:targetApi="jelly_bean_mr1">center</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold|italic</item>
+    </style>
+    <style name="forbutton">
+        <item name="android:background">@drawable/foredit_text</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:layout_marginRight">10dp</item>
+    </style>
+    <style name="text">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/button</item>
+    </style>
+
+</resources>

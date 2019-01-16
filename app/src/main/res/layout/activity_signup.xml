@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:padding="20dp"
+    android:orientation="vertical">
+
+
+    <TextView
+        style="@style/text"
+        android:id="@+id/tv_llabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:textSize="30dp"
+        android:layout_marginBottom="50dp"
+        android:textColor="@color/colorPrimary"
+        android:textAlignment="center"
+        android:textStyle="italic|bold"/>
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                style="@style/text"
+                android:id="@+id/tv_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Name"
+                android:textSize="20dp"/>
+
+
+            <EditText
+                android:layout_marginLeft="15dp"
+                android:id="@+id/et_lname"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:ems="10"
+                android:background="#c1cdcd"
+                android:paddingLeft="8dp"
+                android:layout_marginTop="15dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                style="@style/text"
+                android:id="@+id/tv_semail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Email"
+                android:textSize="20dp"/>
+
+
+            <EditText
+                android:layout_marginLeft="15dp"
+                android:id="@+id/et_semail"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:ems="10"
+                android:background="#c1cdcd"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="8dp"
+                android:layout_marginTop="15dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                style="@style/text"
+                android:id="@+id/tv_spwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Password"
+                android:textSize="20dp"/>
+
+            <EditText
+                android:id="@+id/et_spwd"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:ems="10"
+                android:layout_marginLeft="15dp"
+                android:background="#c1cdcd"
+                android:paddingLeft="8dp"
+                android:layout_marginTop="15dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:inputType="textPassword"/>
+
+
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                style="@style/text"
+                android:id="@+id/tv_sconfirmpwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Confirm"
+                android:textSize="20dp"/>
+
+            <EditText
+                android:id="@+id/et_sconfirmpwd"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:ems="10"
+                android:layout_marginLeft="15dp"
+                android:background="#c1cdcd"
+                android:paddingLeft="8dp"
+                android:layout_marginTop="15dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:inputType="textPassword"/>
+        </TableRow>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/text"
+                android:id="@+id/tv_sgender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gender         "
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"/>
+
+            <RadioGroup
+                android:id="@+id/rdg_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                >
+
+                <RadioButton
+                    style="@style/text"
+                    android:id="@+id/rb_male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="Male"
+                    android:checked="true"/>
+
+                <RadioButton
+                    style="@style/text"
+                    android:id="@+id/rb_female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="Female"/>
+
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+    </TableLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <Button
+        style="@style/forbutton"
+        android:id="@+id/bt_signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="40dp"
+        android:text="SignUp" />
+    <Button
+        style="@style/forbutton"
+        android:id="@+id/bt_cancelsu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Cancel" />
+</LinearLayout>
+
+
+</LinearLayout>
+
